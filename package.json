@@ -1,0 +1,31 @@
+{
+  "name": "@cloud9-labs/mcp-stripe",
+  "version": "0.1.0",
+  "description": "MCP server for Stripe API - manage customers, products, prices, subscriptions, invoices, and payments",
+  "type": "module",
+  "bin": {
+    "mcp-stripe": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": ["mcp", "stripe", "payment", "billing", "ai", "model-context-protocol"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud9-labs/mcp-stripe.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
